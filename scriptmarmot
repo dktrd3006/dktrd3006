@@ -4,6 +4,7 @@ getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg", "Ancient Seed Pack"},
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
+	CLAIM_FOOD_CONNOISSEUR_REWARD = { "Culinarian Chest", "Gorilla Chef", "Gourmet Egg", "Sunny-Side Chicken", "Pet Shard Aromatic" },
     
     -- General:
     AUTO_UPDATE_RESTART = true,
@@ -36,8 +37,14 @@ getgenv().gagConfig = {
 			"Dilophosaurus",
 			"Moon Cat",
 			"Spinosaurus",
+			"Gorilla Chef",
+      		"Sunny-Side Chicken",
 			"T-Rex",
 			"Disco Bee",
+			"King Cabbage",
+        	"Lobster Thermidor",
+        	"Badlands Pepper",
+        	"Hotdog Daschund",
 			"Butterfly",
 			"Queen Bee",
 			"Dragonfly",
@@ -79,6 +86,8 @@ getgenv().gagConfig = {
 				"Corrupted Kitsune",
 				"Kitsune",
 				"Spinosaurus",
+				"King Cabbage",
+       			"Lobster Thermidor",
 				"T-Rex",
 				"Disco Bee",
 				"Butterfly",
