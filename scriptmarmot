@@ -31,7 +31,6 @@ getgenv().gagConfig = {
 
     KEEP_PETS = { 
 			"Gorilla Chef",
-			"Sunny-Side Chicken",
 			"King Cabbage",
 			"Lobster Thermidor",
 			"Badlands Pepper",
