@@ -2,10 +2,10 @@ setfpscap(3)
 
 getgenv().gagConfig = {
     -- Event:
-    CRAFT_EVENT = { "Anti Bee Egg" },
+    CRAFT_EVENT = { "Anti Bee Egg", "Skyroot Chest" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     MAX_EVENT_RESTOCK_SHECKLES = 48_000_001,  -- Restock stop at 48m
-    BUY_EVENT_SHOP = { "Sprout Egg", "Spriggan" },
+    BUY_EVENT_SHOP = { "Sprout Egg", "Spriggan", "Skyroot Chest", "Gnome" },
     PLANT_EVENT_TREES = true,  -- This config will replace most plant related config
     
     -- General:
@@ -31,6 +31,8 @@ getgenv().gagConfig = {
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
     KEEP_PETS = { 
+			"Gnome", 
+			"Griffin",
 			"Golem",
 			"Golden Goose",
 			"Grean Bean",
@@ -89,9 +91,11 @@ getgenv().gagConfig = {
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Level Up Lollipop", "Trading Ticket" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
 
-    PET_WEBHOOK_URL = "",
+    PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1401083392438698114/WohD89LQTWnzqXqPbqgujhLSiqERc_2RFv3aiO36abV8-4miuif_ZoJ2k_XMNs6zrCsB",
     SEED_WEBHOOK_URL = "", 
     NOTIFY_PETS = {
+				"Gnome", 
+				"Griffin"
 				"Golden Goose",
 				"Kitsune",
 				"Spinosaurus",
