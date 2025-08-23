@@ -33,6 +33,10 @@ getgenv().gagConfig = {
     KEEP_PETS = { 
 			"Golem",
 			"Golden Goose",
+			"Grean Bean",
+			"Apple Gazelle",
+			"Lemon Lion",
+			"Peach Wasp",
 			"Lobster Thermidor",
 			"French Fry Ferret",
 			"Corrupted Kitsune",
