@@ -156,7 +156,7 @@ getgenv().ConfigsKaitun = {
 				["Blood Kiwi"] = { 8, 100 },
 				["Spaghetti Sloth"] = { 1, 100 },
 				["Caterpillar"] = { 1, 100 },
-				["Giant Ant"] = { 1 100 },
+				["Giant Ant"] = { 1, 100 },
 				["Rooster"] = { 1, 100 },
 				["Starfish"] = { 5, 75 },
 			},
