@@ -66,7 +66,7 @@ getgenv().gagConfig = {
    ["Starfish"] = 8,
    ["Shiba Inu"] = 1,
    ["Blood Kiwi"] = 2,
-   ["Rooster"] = 2
+   ["Rooster"] = 2,
  },
     KEEP_PETS_WEIGHT = { ["Red Giant Ant"] = 5 },
     KEEP_PETS_AGE = { ["Starfish"] = 75 },
@@ -94,7 +94,7 @@ getgenv().gagConfig = {
     "Barn Owl",
     "Cockatrice",
 	"Marmot",
-	"Space Squirrel"
+	"Space Squirrel",
     "Kitsune",
     "Spinosaurus",
     "T-Rex",
