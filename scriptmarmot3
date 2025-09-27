@@ -1,11 +1,17 @@
 setfpscap(3)
+
 getgenv().gagConfig = {
     -- Event:
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Jungle Egg" },
-    MAX_QUEST_REROLL_SHECKLES = 48000001,
+    BUY_EVENT_SHOP = { "Evo Beetroot I", "Evo Blueberry I", "Evo Pumpkin I", "Evo Mushroom I" },
+    MAX_EVENT_RESTOCK_SHECKLES = 48000001,
     
-    PLANT_EVENT_TREES = true,  -- This config will replace most plant related config
+    MAX_PLANTS = 200,
+    DESTROY_UNTIL_MIN_PLANTS = 150,
+    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Apple" },
+    KEEP_SEEDS = { "Bone Blossom" },
+    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Apple" },
+
     PLACE_COSMETIC = { "Cooking Kit" },
     
     -- General:
@@ -36,6 +42,7 @@ getgenv().gagConfig = {
     KEEP_PETS = { 
 			"Tiger",
 			"Swan",
+			"Mizuchi",
 			"Barn Owl",
 			"Phoenix",
 			"Cockatrice",
@@ -82,7 +89,7 @@ getgenv().gagConfig = {
     USE_PETS_FOR_UPGRADE_SLOT = { "Glimmering Sprite" },
     REMOVE_PET_MAX_UPGRADE = { "Glimmering Sprite", "Starfish" },  -- Unequip from garden
 
-    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10 },
+    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10, ["Watering Can"] = 20 },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1401083392438698114/WohD89LQTWnzqXqPbqgujhLSiqERc_2RFv3aiO36abV8-4miuif_ZoJ2k_XMNs6zrCsB",
