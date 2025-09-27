@@ -42,7 +42,7 @@ getgenv().gagConfig = {
 	MAX_REBIRTH_SHECKLES = 1000_000_000_000_000,
 	BUY_ASCEND_SHOP = {"Egg Capacity Upgrade"},
     
-    EQUIP_PETS = { ["Barn Owl"] = 8 },
+    EQUIP_PETS = { ["Rooster"] = 8 },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10 },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
