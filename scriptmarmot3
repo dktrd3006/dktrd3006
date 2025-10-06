@@ -82,7 +82,7 @@ getgenv().gagConfig = {
 	MAX_REBIRTH_SHECKLES = 1_000_000_000_000_000,
 	BUY_ASCEND_SHOP = {"Egg Capacity Upgrade"},
 
-    EQUIP_PETS = { ["Chubby Chipmunk"] = 1, ["Farmer Chipmunk"] = 4, ["Idol Chipmunk"] = 3 },
+    EQUIP_PETS = { ["Chubby Chipmunk"] = 1, ["Rooster"] = 7 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Glimmering Sprite" },
     REMOVE_PET_MAX_UPGRADE = { "Glimmering Sprite", "Starfish" },  -- Unequip from garden
 
