@@ -33,7 +33,6 @@ getgenv().gagConfig = {
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
     KEEP_PETS = {
-			"Fortune Squirrel",
 			"Chinchilla",
 			"Chubby Chipmunk",
 			"Tiger",
@@ -61,14 +60,14 @@ getgenv().gagConfig = {
 			"Mimic Octopus",
 			"Red Fox",
 			"Blood Owl",
-			["Farmer Chipmunk"] = 8,
-			["Idol Chipmunk"] = 8,
+			["Fortune Squirrel"] = 5,
+			["Farmer Chipmunk"] = 5,
+			["Idol Chipmunk"] = 5,
 			["Firefly"] = 10,
 			["Chimpanzee"] = 8,
 			["Red Panda"] = 10,
 			["Drake"] = 5,
 			["Luminous Sprite"] = 5,
-			["Glimmering Sprite"] = 5,
 			["Starfish"] = 8,
 			["Shiba Inu"] = 1,
 			["Blood Kiwi"] = 2,
