@@ -75,6 +75,7 @@ getgenv().gagConfig = {
 	},
     KEEP_PETS_WEIGHT = {},
     KEEP_PETS_AGE = { ["Starfish"] = 75 },
+	SELL_PETS_WEIGHT = { ["Glimmering Sprite"] = 20 },
 
 	-- test
 	EQUIP_PET_SHARD = {},
@@ -82,7 +83,7 @@ getgenv().gagConfig = {
 	BUY_ASCEND_SHOP = {"Egg Capacity Upgrade"},
 
     EQUIP_PETS = { ["Chubby Chipmunk"] = 1, ["Rooster"] = 7 },
-    USE_PETS_FOR_UPGRADE_SLOT = { "Glimmering Sprite" },
+    USE_PETS_FOR_UPGRADE_SLOT = {},
     REMOVE_PET_MAX_UPGRADE = { "Glimmering Sprite", "Starfish" },  -- Unequip from garden
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10, ["Watering Can"] = 20 },
