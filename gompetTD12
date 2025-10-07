@@ -1,8 +1,16 @@
 getgenv().Config = {
-    ["Account Main"] = {"Wnt4GtWEz9"},
-    ["Pet"] = {"Swan", "Cockatrice", "Phoenix", "Golden Goose", "Mimic Octopus", "Dragonfly", "Disco Bee", "Lobster Thermidor", "French Fry Ferret", "Butterfly"},
-    ["UUID"] = "5c1owkwnfk81c82e33e8f401c834956a1823baecce5972ee281bdb4147ae6031229e4055fb5bc13e57f0bb0bba9be05zzzWnt4GtWEz9",
-    ["Url"] = "https://yummydata.click"
+    ["Account Main"] = {"vCoI2dqL5H", "kg6DhlVUN0", "fQk0MT1Quo", "fNbwwmxVnI", "0wD5W07rNy"},
+    ["Pet"] = {"Chinchilla"},
+    ["UUID"] = "6tzzzr2mT49hPzzzzzzgasgDmYhzzfwag",
+    ["Url"] = "https://yummydata.click",
+    ["Weight"] = {
+        ["Enable"] = false,
+        ["Weight"] = 5
+    },
+    ["Age"] = {
+        ["Enable"] = false,
+        ["Age"] = 60
+    }
 }
 repeat
     wait()
@@ -49,23 +57,61 @@ spawn(function()
     end
 end)
 function havepet()
-    for i, v in game:GetService("Players").LocalPlayer.Backpack:GetChildren() do
-        if v:IsA("Tool") and v:GetAttribute("ItemType") == "Pet" then
-            for i1, v1 in getgenv().Config["Pet"] do
-                if string.find(v.Name, v1) then
-                    return v
+    local id = {}
+    local v_u_1 = game:GetService("ReplicatedStorage")
+    local v_u_3 = require(v_u_1.Modules.DataService)
+    local v33 = v_u_3:GetData()
+
+    local petCounter = 0
+    local v2 = game:GetService("ReplicatedStorage")
+    local v_u_7 = require(v2.Data.PetRegistry)
+    local v_u_12 = v_u_7.PetList
+    local v_u_71 = require(v2.Data.DecimalNumberFormat)
+    local v_u_3 = require(game:GetService("ReplicatedStorage").Modules.DataService)
+    local playerdata = v_u_3:GetData()
+    local equippedPets = playerdata.PetsData.EquippedPets or {}
+    local inventoryData = playerdata.PetsData.PetInventory.Data or {}
+    local backpackItems = game.Players.LocalPlayer.Backpack:GetChildren()
+    for i, v in inventoryData do
+        local baseW = v.PetData.BaseWeight or 0
+        local lvl = v.PetData.Level or 0
+        if getgenv().Config["Age"]["Enable"] and v.PetType then
+            if lvl >= getgenv().Config["Age"]["Age"] then
+                table.insert(id, i)
+                if table.find(equippedPets, i) then
+                    local args = {"UnequipPet", i}
+                    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("PetsService")
+                        :FireServer(unpack(args))
                 end
             end
+
         end
+
+        local PetUtilities = require(game.ReplicatedStorage.Modules:WaitForChild("PetServices"):WaitForChild(
+            "PetUtilities"))
+        local rawW = PetUtilities:CalculateWeight(baseW, lvl)
+
+        if getgenv().Config["Weight"]["Enable"] and v.PetType then
+            if rawW >= getgenv().Config["Weight"]["Weight"] then
+                table.insert(id, i)
+                if table.find(equippedPets, i) then
+                    local args = {"UnequipPet", i}
+game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("PetsService")
+                        :FireServer(unpack(args))
+                end
+            end
+
+        end
+        if v.PetType and table.find(getgenv().Config["Pet"], v.PetType) and not table.find(equippedPets, i) then
+
+            table.insert(id, i)
+        end
+
     end
-    for i, v in game:GetService("Players").LocalPlayer.Character:GetChildren() do
-        if v:IsA("Tool") and v:GetAttribute("ItemType") == "Pet" then
-            for i1, v1 in getgenv().Config["Pet"] do
-                if string.find(v.Name, v1) then
-                    return v
-                end
-            end
-        end
+    if #id > 0 then
+        return id
+    else
+        return false
     end
 end
 
@@ -114,7 +160,7 @@ spawn(function()
         pcall(function()
             if table.find(getgenv().Config["Account Main"], game.Players.LocalPlayer.Name) then
                 postmain()
-end
+            end
 
         end)
     end
@@ -134,6 +180,8 @@ spawn(function()
                     repeat
                         wait()
                     until not havepet()
+                    writefile(game.Players.LocalPlayer.Name .. ".txt", "Completed-Change Clone")
+                    task.wait(3)
                     game.Players.LocalPlayer:Kick("Done")
                 end
             end
@@ -141,36 +189,11 @@ spawn(function()
     end
 end)
 local abc = tick()
-spawn(function()
-    while wait(1) do
-        if tick() - abc > 5 * 60 and table.find(getgenv().Config["Account Main"], game.Players.LocalPlayer.Name) then
-            local servers = {}
-            local req = game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId ..
-                                         "/servers/Public?sortOrder=Asc&limit=100&excludeFullGames=true")
-            local body = game:GetService("HttpService"):JSONDecode(req)
-            local TeleportService = (game:GetService("TeleportService"))
 
-            if body and body.data then
-                for i, v in next, body.data do
-                    if type(v) == "table" and tonumber(v.playing) and tonumber(v.maxPlayers) and v.playing <
-                        v.maxPlayers and v.id ~= game.JobId then
-                        table.insert(servers, 1, v.id)
-                    end
-                end
-            end
-
-            if #servers > 0 then
-                TeleportService:TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)],
-                    game.Players.LocalPlayer)
-            else
-                print("Couldn't find a server.")
-            end
-        end
-    end
-end)
 spawn(function()
     while wait() do
         pcall(function()
+
             if not table.find(getgenv().Config["Account Main"], game.Players.LocalPlayer.Name) then
                 if havepet() then
 
@@ -188,20 +211,27 @@ spawn(function()
                     else
                         for i, v in getgenv().Config["Account Main"] do
                             if game.Players:FindFirstChild(v) then
-                                if havepet():GetAttribute("d") then
-                                    local args = {havepet()}
-                                    game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild(
-                                        "Favorite_Item"):FireServer(unpack(args))
-                                    task.wait(1)
-                                end
+                                for i1, v1 in game:GetService("Players").LocalPlayer.Backpack:GetChildren() do
+                                    if havepet() and table.find(havepet(), v1:GetAttribute("PET_UUID")) then
+                                        if v1:GetAttribute("d") then
+                                            local args = {v1}
+                                            game:GetService("ReplicatedStorage"):WaitForChild("GameEvents")
+                                                :WaitForChild("Favorite_Item"):FireServer(unpack(args))
+                                            task.
+wait(1)
+                                        end
+                                        v1.Parent = game:GetService("Players").LocalPlayer.Character
+                                        local args = {"GivePet", game:GetService("Players"):WaitForChild(v)}
+                                        game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild(
+                                            "PetGiftingService"):FireServer(unpack(args))
+                                        task.wait(3)
+                                        v1.Parent = game:GetService("Players").LocalPlayer.Backpack
 
-                                havepet().Parent = game.Players.LocalPlayer.Character
-                                local args = {"GivePet", game:GetService("Players"):WaitForChild(v)}
-                                game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild(
-                                    "PetGiftingService"):FireServer(unpack(args))
-                                task.wait(3)
+                                    end
+                                end
                             end
                         end
+
                     end
                 else
                     -- Script Farm
@@ -209,8 +239,3 @@ spawn(function()
                         wait()
                     until havepet()
                 end
-
-            end
-        end)
-    end
-end)
