@@ -2,8 +2,8 @@ setfpscap(3)
 
 getgenv().gagConfig = {
     -- Event:
-    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Spooky Egg", "Reaper", ["Ghost Bear"] = 8 },
+    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Loquat", "Feijoa", "Pitcher Plant", "Jungle Egg" },
+    BUY_EVENT_SHOP = { "Spooky Egg", "Reaper", ["Ghost Bear"] = 8, "Jungle Egg" },
     MAX_EVENT_RESTOCK_SHECKLES = 48000001,
 
     PLACE_COSMETIC = { "Cooking Kit" },
