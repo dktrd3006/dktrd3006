@@ -97,7 +97,6 @@ getgenv().gagConfig = {
     NOTIFY_PETS = {
 				"Lich",
 				"Mummy",
-				"Hex Serpent",
 				"Headless Horseman",
 				"Reaper",
 				"Chinchilla",
