@@ -27,8 +27,8 @@ getgenv().pvbConfig = {
     SELL_PLANT_DELAY = 30,  -- "Delay for "sell all" plant 
  
     -- Webhook 
-    BRAINROT_WEBHOOK_URL = "", 
-    DISCORD_ID = "1305911308507418658", 
+    BRAINROT_WEBHOOK_URL = "https://discord.com/api/webhooks/1401099798035169412/c9YuokegLj_EnWo8igCW2dypgQ14-f4TevmPnCwKfeRI90UWb08RQzRSeWwmIq3Iy3W9", 
+    DISCORD_ID = "333090652424372226", 
     NOTIFY_RARITY = {}, 
     NOTIFY_MONEY_PER_SECOND = 10000, 
     WEBHOOK_NOTE = "PC", 
