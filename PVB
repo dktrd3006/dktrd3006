@@ -20,7 +20,7 @@ getgenv().pvbConfig = {
     -- Keep = Favorite (Prevent sell) 
     KEEP_SEED = {},  -- Plant Names 
     KEEP_PLANT_RARITY = {"Secret", "Limited"}, 
-    KEEP_BRAINROT_MONEY_PER_SECOND = 50000,  -- 50000 means keep $50+k/s brainrot 
+    KEEP_BRAINROT_MONEY_PER_SECOND = 1000000,  -- 50000 means keep $50+k/s brainrot 
     KEEP_BRAINROT_RARITY = {},  
  
     SELL_BRAINROT_DELAY = 30,  -- Delay for "sell all" brainrot 
@@ -28,9 +28,9 @@ getgenv().pvbConfig = {
  
     -- Webhook 
     BRAINROT_WEBHOOK_URL = "https://discord.com/api/webhooks/1401099798035169412/c9YuokegLj_EnWo8igCW2dypgQ14-f4TevmPnCwKfeRI90UWb08RQzRSeWwmIq3Iy3W9", 
-    DISCORD_ID = "333090652424372226", 
+    DISCORD_ID = "", 
     NOTIFY_RARITY = {}, 
-    NOTIFY_MONEY_PER_SECOND = 10000, 
+    NOTIFY_MONEY_PER_SECOND = 1000000, 
     WEBHOOK_NOTE = "PC", 
     SHOW_PUBLIC_DISCORD_ID = true, 
     SHOW_WEBHOOK_USERNAME = true, 
