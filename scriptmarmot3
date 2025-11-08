@@ -3,7 +3,7 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Loquat", "Feijoa", "Pitcher Plant", "Jungle Egg" },
-    BUY_EVENT_SHOP = { "Safari Egg" },
+    BUY_EVENT_SHOP = { "Safari Egg", "Lion", "Crocodile" },
 	DISABLE_REAPER_EVENT = false,
 
     PLACE_COSMETIC = { "Cooking Kit" },
@@ -34,6 +34,8 @@ getgenv().gagConfig = {
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
     KEEP_PETS = {
+			"Lion",
+			"Crocodile",
 			"Elephant",
 			"Lich",
 			"Hydra",
@@ -95,6 +97,7 @@ getgenv().gagConfig = {
 	SHOW_PUBLIC_DISCORD_ID = false,
     SEED_WEBHOOK_URL = "", 
     NOTIFY_PETS = {
+				"Lion",
 				"Elephant",
 				"Lich",
 				"Mummy",
