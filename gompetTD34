@@ -1,6 +1,6 @@
 getgenv().Config = {
-    ["Account Main"] = {"HitoshiGarethAnn", "BrentIsaacBeth", "Frances_Ebba2023", "Zhu_Eddi385", "Arn0ldDianaDeirdre"},
-    ["Pet"] = {"Mummy"},
+    ["Account Main"] = {"HitoshiGarethAnn", "Yi_CHARLES2021", "Frances_Ebba2023", "Zhu_Eddi385", "RinaDee200975"},
+    ["Pet"] = {"Elephant"},
     ["UUID"] = "5c1owkwnfk81c82e33e8f401c834956a1823baecce5972ee281bdb4147ae6031229e4055fb5bc13e57f0bb0bba9be05zzzeBN01ZvtHC",
     ["Url"] = "https://yummydata.click",
     ["Weight"] = {
