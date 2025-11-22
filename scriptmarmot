@@ -6,7 +6,7 @@ getgenv().gagConfig = {
     BUY_EVENT_SHOP = { "Gem Egg", "Safari Egg", "Lion", "Crocodile" },
 	DISABLE_REAPER_EVENT = false,
 	CRAFT_EVENT = { "Gem Egg", "Cheetah", "Smithing Dog" },
-	IGNORE_SUBMIT_EVENT_FORGE = { "Gem Egg", "Coal", "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Levelup Lollipop", "Jungle Egg", "Bee Egg", "Spooky Egg", "Paradise Egg", "Safari Egg", "Common Egg", "Rare Coal", "Legendary Coal" },
+	IGNORE_SUBMIT_EVENT_FORGE = { "Gem Egg", "Coal", "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Levelup Lollipop", "Jungle Egg", "Bee Egg", "Spooky Egg", "Paradise Egg", "Safari Egg", "Rare Coal", "Legendary Coal" },
 
     PLACE_COSMETIC = { "Cooking Kit" },
     
