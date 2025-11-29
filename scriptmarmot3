@@ -30,8 +30,8 @@ getgenv().gagConfig = {
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
     KEEP_PETS = {
-			"Messenger Pigeon",
-			"Camel",
+			["Messenger Pigeon"] = 5,
+			["Camel"] = 5,
 			"Bearded Dragon",
 			"Chimera",
 			"Goblin Miner",
