@@ -32,7 +32,7 @@ getgenv().gagConfig = {
     KEEP_PETS = {
 			["Messenger Pigeon"] = 5,
 			["Camel"] = 5,
-			"Bearded Dragon",
+			["Bearded Dragon"] = 8,
 			"Chimera",
 			"Goblin Miner",
 			"Ruby Squid",
