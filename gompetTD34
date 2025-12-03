@@ -1,5 +1,5 @@
 getgenv().Config = {
-    ["Account Main"] = {"Nong_Tim59", "Nhanh_MANH2017", "HaChua2002", "TaiKienDien", "BinhMay73"},
+    ["Account Main"] = {"Vang_Nhanh", "BinhMay73", "Tao_DEM92", "Ta0MuaCa02024", "Uy3nXinh2017"},
     ["Pet"] = { "Ruby Squid" },
     ["UUID"] = "5c1owkwnfk81c82e33e8f401c834956a1823baecce5972ee281bdb4147ae6031229e4055fb5bc13e57f0bb0bba9be05zzzeBN01ZvtHC",
     ["Url"] = "https://yummydata.click",
