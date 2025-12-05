@@ -151,7 +151,7 @@ end)
 local abc = tick()
 spawn(function()
     while wait(1) do
-        if tick() - abc > 5 * 60 and table.find(getgenv().Config["Account Main"], game.Players.LocalPlayer.Name) then
+        if tick() - abc > 30 * 60 and table.find(getgenv().Config["Account Main"], game.Players.LocalPlayer.Name) then
             local servers = {}
             local req = game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId ..
                                          "/servers/Public?sortOrder=Asc&limit=100&excludeFullGames=true")
