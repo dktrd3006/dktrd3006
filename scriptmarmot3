@@ -1,6 +1,6 @@
 getgenv().gagConfig = {
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Gem Egg" },
+    BUY_EVENT_SHOP = { "Gem Egg", "Santa's Surprise Present", "Christmas Present", "Christmas Crate", "Holiday Crate" },
     PLANT_EVENT_TREES = true,
 	
     MAX_PLANTS = 300,
