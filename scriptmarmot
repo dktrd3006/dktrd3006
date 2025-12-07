@@ -31,7 +31,7 @@ getgenv().gagConfig = {
 
     KEEP_PETS = {
 			["Christmas Gorilla"] = 8,
-			"Mistletoad",
+			["Mistletoad"] = 8,
 			"Krampus",
 			"Arctic Fox",
 			["French Hen"] = 5,
@@ -114,10 +114,8 @@ getgenv().gagConfig = {
 	SHOW_PUBLIC_DISCORD_ID = false,
     SEED_WEBHOOK_URL = "", 
     NOTIFY_PETS = {
-			"Christmas Gorilla",
 			"Krampus",
 			"Arctic Fox",
-			"French Hen",
 			"Frost Dragon",
 			"Ruby Squid",
 			"Tiger",
