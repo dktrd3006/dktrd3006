@@ -1,6 +1,9 @@
 getgenv().Config = {
+    LOCK_FPS = 3, -- Only work in Web Version
     FARM_MODE = "Crate", -- BattlePass / Crate
     AUTO_RESTART_WHEN_UPDATE = true,
+    HOP_WHEN_COIN_EARNED_LOWER = 250,
+    TIME_TO_CHECK_COIN_EARNED = 1800,
     DISPLAY_UI = true,
     STOP_AUTO_BUY_FINAL_REWARD = false, -- Stop auto buy Godly Item when completed Battle Pass
     WEBHOOK_URL = "https://discord.com/api/webhooks/1401083392438698114/WohD89LQTWnzqXqPbqgujhLSiqERc_2RFv3aiO36abV8-4miuif_ZoJ2k_XMNs6zrCsB",
