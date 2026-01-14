@@ -1,5 +1,5 @@
 getgenv().Config = {
-    FARM_MODE = "crate", -- Chuyển sang chế độ đa năng
+    FARM_MODE = "Crate", -- Chuyển sang chế độ đa năng
     LIST_FARM_MODE = {}, -- Thêm 2 mục này vào danh sách
     STOP_MULTI_FARM_MODE_IF_FULL_TIER_AND_CAN_BUY_REWARD = false,
     AUTO_RESTART_WHEN_UPDATE = true,
