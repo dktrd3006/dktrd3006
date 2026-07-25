@@ -18,6 +18,14 @@
             SelectiveFarm = false, -- If true, only farm pets in SelecatedPetTypes list
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
+        EventFarm = {
+            BeeWagon = {
+                Enabled = false, -- Enable the Bee Wagon 2026 event farm (plant, pick, deposit, claim)
+                AutoBuySeeds = true, -- Buy exactly the seeds the vases still need (skips what you already hold)
+                AutoClaimBattlePass = true, -- Claim Bee Pass tiers as soon as the XP unlocks them
+                AutoRestartPass = true, -- Restart the pass after all 13 tiers to keep farming the rewards
+            },
+        },
         AutoTrade = {
             Enabled = false, -- Enable auto trading
             AutoAcceptTrades = false, -- Accept incoming trade requests
