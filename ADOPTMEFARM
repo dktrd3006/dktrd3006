@@ -1,0 +1,156 @@
+{
+  "templateName": "template_1786961456546",
+  "displayName": "Crystal Egg ",
+  "description": "",
+  "icon": "Crown",
+  "color": "emerald",
+  "config": {
+    "Dashboard": {
+      "Enabled": true,
+      "GroupName": ""
+    },
+    "BabyFarm": true,
+    "PetFarm": {
+      "Enabled": true,
+      "FarmEggs": false,
+      "BuyEggs": true,
+      "EggTypes": [
+        "endangered_2026_endangered_egg",
+      ],
+      "BuyEggType": "endangered_2026_endangered_egg",
+      "MaxPets": 1,
+      "FarmUntilFullGrown": false,
+      "PrioritizeFriendship": true,
+      "SelectiveFarm": false,
+      "SelectedPetTypes": []
+    },
+    "AutoNeon": {
+      "Enabled": true,
+      "MakeMega": true,
+      "NeonAll": false,
+      "SelectedPets": ["endangered_2026_blue_whale", "endangered_2026_sea_turtle"],
+      "MaxPerType": {}
+    },
+    "Settings": {
+      "AutoShowUI": false,
+      "ShowOverlay": true,
+      "ReduceGraphics": true,
+      "FPSCap": 3,
+      "LureId": "ice_dimension_2025_ice_soup_bait",
+      "TradeInvites": "Everyone"
+    },
+    "AutoTrade": {
+      "Enabled": false,
+      "AutoAcceptTrades": false,
+      "Usernames": [],
+      "TradeMode": "all",
+      "Categories": [],
+      "Items": [],
+      "ItemCounts": [],
+      "GlobalPetFilter": {
+        "Versions": [],
+        "Ages": []
+      },
+      "PetFilters": {},
+      "AutoLeaveAfterTrades": false
+    },
+    "AutoCertificate": false,
+    "AutoPotion": {
+      "Enabled": false,
+      "SelectedPets": [],
+      "PotionVersionFilter": {}
+    },
+    "AutoBuy": {
+      "Enabled": true,
+      "SelectedItems": [
+        "pet_recycler_2025_crystal_egg"
+      ],
+      "BuyAmounts": [
+        999
+      ]
+    },
+    "AutoPay": {
+      "Enabled": false,
+      "TargetPlayer": [],
+      "Methods": []
+    },
+    "AutoOpen": {
+      "Enabled": false,
+      "Items": []
+    },
+    "AutoRecycle": {
+      "Enabled": true,
+      "RarityFilter": {
+        "common": [
+          "regular",
+          "neon",
+          "mega"
+        ],
+        "uncommon": [
+          "mega",
+          "regular",
+          "neon"
+        ],
+        "rare": [
+          "neon",
+          "regular",
+          "mega"
+        ],
+        "ultra_rare": [
+          "regular",
+          "neon",
+          "mega"
+        ]
+      },
+      "AgeFilter": [],
+      "ExcludedPets": ["dog","cat"]
+    },
+    "IdleProgression": {
+      "Enabled": true,
+      "SelectedPets": ["endangered_2026_endangered_egg"],
+      "ExcludedPets": [],
+      "PriorityOrder": [],
+      "PenVersionFilter": {}
+    },
+    "TaskExclusion": {
+      "Enabled": false,
+      "ExcludedTasks": []
+    },
+    "Webhook": {
+      "Enabled": false,
+      "URL": "https://discord.com/api/",
+      "PetUnlock": {
+        "Enabled": false,
+        "URL": "https://discord.com/api/webhooks/",
+        "FilterRarities": [
+          "legendary",
+          "ultra_rare"
+        ]
+      }
+    },
+    "AccountManager": {
+      "Enabled": false,
+      "Tool": "",
+      "Yummy": {
+        "Action": "completed",
+        "Reason": "Done"
+      },
+      "FarmSync": {
+        "Action": "completed",
+        "FromFolderId": "",
+        "ToFolderId": "",
+        "ChangeWithoutReplacement": false,
+        "ConfigId": null,
+        "ApiKey": ""
+      },
+      "FarmerV5": {
+        "ApiKey": ""
+      },
+      "Triggers": {
+        "AfterTradeComplete": false,
+        "MinBucks": 0,
+        "MinPotions": 0
+      }
+    }
+  }
+}
