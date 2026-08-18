@@ -97,7 +97,7 @@ getgenv().Config = {
                 legendary = {"mega"},                   -- Only recycle mega legendaries
             },
             AgeFilter = {}, -- Empty = all ages, or specific ages e.g. {1, 2, 3, 4, 5, 6} (1=Newborn, 6=Full Grown)
-            ExcludedPets = {"dog,"cat"}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
+            ExcludedPets = {"dog","cat"}, -- Pet IDs to never recycle e.g. {"dog", "cat", "shadow_dragon"}
         },
         IdleProgression = {
             Enabled = true, -- Put pets in pet pen for idle leveling
